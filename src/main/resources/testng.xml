@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GardenPlanner Suite" verbose="2">
+    <test name="Unit-tests">
+        <groups>
+            <define name="unit-tests">
+                <include name="user-input"/>
+                <include name="result-logic"/>
+            </define>
+            <run>
+                <include name="unit-tests"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.epam.training.garden.AppTest"/>
+        </classes>
+    </test>
+</suite>
